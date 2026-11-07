@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1A237E"
+    android:padding="24dp">
+
+    <!-- App Title -->
+    <TextView
+        android:id="@+id/tvAppTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Crowdsourced Disaster Alert and Safety App"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginTop="40dp"/>
+
+    <!-- White Card Container -->
+    <LinearLayout
+        android:id="@+id/loginContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#FFFFFF"
+        android:padding="20dp"
+        android:layout_below="@id/tvAppTitle"
+        android:layout_marginTop="40dp">
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Email"
+            android:textColor="#000000"
+            android:textColorHint="#757575"
+            android:inputType="textEmailAddress"
+            android:padding="12dp"/>
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Password"
+            android:textColor="#000000"
+            android:textColorHint="#757575"
+            android:inputType="textPassword"
+            android:layout_marginTop="16dp"
+            android:padding="12dp"/>
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:textColor="#ffffff"
+            android:backgroundTint="#3949AB"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="New user? Register below"
+            android:textColor="#424242"
+            android:textSize="13sp"
+            android:layout_marginTop="18dp"
+            android:gravity="center"/>
+
+
+
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#00897B"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="If you already have an account, use Login above"
+            android:textColor="#757575"
+            android:textSize="12sp"
+            android:layout_marginTop="16dp"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
